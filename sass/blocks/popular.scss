@@ -1,0 +1,66 @@
+.popular__wrapper {
+  @include container;
+}
+
+.popular__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-right: 25px;
+  padding-left: 30px;
+
+  background-color: $red--light;
+}
+
+.popular__title {
+  margin: 28px 0;
+
+  font-size: 30px;
+  color: $color-main--light;
+  text-transform: uppercase;
+}
+
+.popular__btn {
+  min-width: 250px;
+}
+
+.popular__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popular__item {
+  box-sizing: border-box;
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  border: 1px solid $gray;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: transparent;
+    box-shadow: 0 10px 25px rgba($color-main, 0.5);
+  }
+}
+
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 145px;
+
+  &:focus {
+    outline: none;
+  }
+
+  img {
+    display: block;
+  }
+}

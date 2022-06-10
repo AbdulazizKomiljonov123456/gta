@@ -1,0 +1,68 @@
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px;
+
+  font: inherit;
+  font-size: 14px;
+  vertical-align: top;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $red;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $red--darken;
+  }
+
+  &:active {
+    background-color: $red--darkest;
+  }
+
+  &--fluid {
+    width: 100%;
+  }
+
+  &--transparent {
+    background-color: rgba(black, 0.1);
+
+    &:hover,
+    &:focus {
+      background-color: rgba(black, 0.2);
+    }
+
+    &:active {
+      background-color: rgba(black, 0.3);
+    }
+  }
+
+  &--white {
+    padding: 0 15px;
+
+    font-size: 13px;
+    line-height: 36px;
+    font-family: $font-second;
+    color: black;
+
+    background-color: transparent;
+    border: 1px solid $gray;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      border-color: $gray--dark;
+    }
+
+    &:active {
+      background-color: transparent;
+      border-color: $red;
+    }
+  }
+}
